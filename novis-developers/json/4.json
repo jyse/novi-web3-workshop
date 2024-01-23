@@ -1,0 +1,23 @@
+{
+  "name": "Ferdinand",
+  "description": "He wants to become the next Elon Musk",
+  "image": "ipfs://QmdQLwVDW5z34QTuhdV6EKhniU3zXV5pFfnCSEKj7mBHtp/4.png",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "trait_value": "Novi Hogeschool Cafe"
+    },
+    {
+      "trait_type": "Hair",
+      "value": "Blond"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Blue"
+    },
+    {
+      "trait_type": "Accessories",
+      "value": "Preppy Dark Blue Blazer"
+    }
+  ]
+}

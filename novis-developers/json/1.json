@@ -1,0 +1,23 @@
+{
+  "name": "Jack",
+  "description": "He loves mobile development",
+  "image": "ipfs://QmdQLwVDW5z34QTuhdV6EKhniU3zXV5pFfnCSEKj7mBHtp/1.png",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "trait_value": "Novi Hogeschool Cafe"
+    },
+    {
+      "trait_type": "Hair",
+      "value": "Chestnut brown"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Blue"
+    },
+    {
+      "trait_type": "Accessories",
+      "value": "Red backpack"
+    }
+  ]
+}

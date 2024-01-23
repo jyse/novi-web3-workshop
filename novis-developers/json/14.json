@@ -1,0 +1,23 @@
+{
+  "name": "Aubrey",
+  "description": "She wants to become a Data scientist or a Backend engineer",
+  "image": "ipfs://QmdQLwVDW5z34QTuhdV6EKhniU3zXV5pFfnCSEKj7mBHtp/14.png",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "trait_value": "Novi Hogeschool Cafe"
+    },
+    {
+      "trait_type": "Hair",
+      "value": "Brown"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Brown"
+    },
+    {
+      "trait_type": "Accessories",
+      "value": "Tan Leather jacket"
+    }
+  ]
+}

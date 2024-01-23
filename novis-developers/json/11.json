@@ -1,0 +1,23 @@
+{
+  "name": "Eren",
+  "description": "Loves to participate in Hackathons",
+  "image": "ipfs://QmdQLwVDW5z34QTuhdV6EKhniU3zXV5pFfnCSEKj7mBHtp/11.png",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "trait_value": "Novi Hogeschool Cafe"
+    },
+    {
+      "trait_type": "Hair",
+      "value": "Brown"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Green"
+    },
+    {
+      "trait_type": "Accessories",
+      "value": "Brown vest"
+    }
+  ]
+}

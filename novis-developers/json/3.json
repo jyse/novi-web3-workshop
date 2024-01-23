@@ -1,0 +1,23 @@
+{
+  "name": "Roger",
+  "description": "He likes to learn new tech like AI and blockchain",
+  "image": "ipfs://QmdQLwVDW5z34QTuhdV6EKhniU3zXV5pFfnCSEKj7mBHtp/3.png",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "trait_value": "Novi Hogeschool Cafe"
+    },
+    {
+      "trait_type": "Hair",
+      "value": "Dark brown"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Brown"
+    },
+    {
+      "trait_type": "Accessories",
+      "value": "Light blue denim jacket"
+    }
+  ]
+}

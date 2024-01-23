@@ -1,0 +1,23 @@
+{
+  "name": "Leila",
+  "description": "Loves to do yoga and code",
+  "image": "ipfs://QmdQLwVDW5z34QTuhdV6EKhniU3zXV5pFfnCSEKj7mBHtp/17.png",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "trait_value": "Appartment"
+    },
+    {
+      "trait_type": "Hair",
+      "value": "Purple and blue"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Dark blue"
+    },
+    {
+      "trait_type": "Accessories",
+      "value": "Blue headphones"
+    }
+  ]
+}

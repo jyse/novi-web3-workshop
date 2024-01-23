@@ -1,0 +1,27 @@
+{
+  "name": "Ruby",
+  "description": "She loves to solve challenges on Leetcode",
+  "image": "ipfs://QmdQLwVDW5z34QTuhdV6EKhniU3zXV5pFfnCSEKj7mBHtp/2.png",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "trait_value": "Novi Hogeschool Cafe"
+    },
+    {
+      "trait_type": "Hair",
+      "value": "Mint green"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Mint green"
+    },
+    {
+      "trait_type": "Accessories",
+      "value": "Pink green coloured kimono"
+    },
+    {
+      "trait_type": "Accessories",
+      "value": "Red glasses"
+    }
+  ]
+}

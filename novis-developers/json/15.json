@@ -1,0 +1,27 @@
+{
+  "name": "Lucienne",
+  "description": "She wants to teach her grandchildren code",
+  "image": "ipfs://QmdQLwVDW5z34QTuhdV6EKhniU3zXV5pFfnCSEKj7mBHtp/15.png",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "trait_value": "Novi Hogeschool Cafe"
+    },
+    {
+      "trait_type": "Hair",
+      "value": "Grey"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Blue"
+    },
+    {
+      "trait_type": "Accessories",
+      "value": "Green dress"
+    },
+    {
+      "trait_type": "Accessories",
+      "value": "Black glasses"
+    }
+  ]
+}

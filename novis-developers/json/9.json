@@ -1,0 +1,19 @@
+{
+  "name": "Billie",
+  "description": "She loves backend and solve complex data challenges",
+  "image": "ipfs://QmdQLwVDW5z34QTuhdV6EKhniU3zXV5pFfnCSEKj7mBHtp/9.png",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "trait_value": "Novi Hogeschool Cafe"
+    },
+    {
+      "trait_type": "Hair",
+      "value": "Blue"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Red"
+    }
+  ]
+}

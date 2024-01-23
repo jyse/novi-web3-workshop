@@ -1,0 +1,27 @@
+{
+  "name": "Jess",
+  "description": "Loves to build things from scratch with code",
+  "image": "ipfs://QmdQLwVDW5z34QTuhdV6EKhniU3zXV5pFfnCSEKj7mBHtp/8.png",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "trait_value": "Novi Hogeschool Cafe"
+    },
+    {
+      "trait_type": "Hair",
+      "value": "Purple"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "brown"
+    },
+    {
+      "trait_type": "Accessories",
+      "value": "Blue headphones"
+    },
+    {
+      "trait_type": "Accessories",
+      "value": "Black bomberjack"
+    }
+  ]
+}

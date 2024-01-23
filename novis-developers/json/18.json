@@ -1,0 +1,23 @@
+{
+  "name": "Killian",
+  "description": "He is a Graphic Designer and wants to learn more about code now ",
+  "image": "ipfs://QmdQLwVDW5z34QTuhdV6EKhniU3zXV5pFfnCSEKj7mBHtp/18.png",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "trait_value": "Novi Hogeschool Cafe"
+    },
+    {
+      "trait_type": "Hair",
+      "value": "Black"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Brown"
+    },
+    {
+      "trait_type": "Accessories",
+      "value": "Orange hoodie"
+    }
+  ]
+}
