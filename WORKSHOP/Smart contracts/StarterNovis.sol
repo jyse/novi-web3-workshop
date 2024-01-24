@@ -12,7 +12,7 @@ contract NoviDevs is ERC721, ERC721Enumerable, ERC721URIStorage {
         ERC721("NoviDev", "MTK")        
     {}
 
-    uint256 maxSupply = 18;
+    uint256 maxSupply = 20;
 
     function _baseURI() internal pure override returns (string memory) {
         return "ipfs://Qmcan4cdpfKn8wRL4UVSKvfjfbDKmkxon4ykbGxmuRZHDo/";

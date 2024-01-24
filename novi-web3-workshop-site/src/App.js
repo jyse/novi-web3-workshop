@@ -6,7 +6,6 @@ import StartMinting from "./components/StartMinting";
 import InProgressMinting from "./components/InProgressMinting";
 import CompletedMinting from "./components/CompletedMinting";
 import { ethers } from "ethers";
-import abi from "./manual/abi.json";
 
 // Step 1: Let's run the app (npm run start)
 
@@ -53,8 +52,7 @@ function App() {
       // Step 6c: Set the transaction hash
 
       setInProgress(true);
-      await transaction.wait();
-      setInProgress(false);
+      // Step 5d: Await the transaction after set in Progress
       setCompleted(true);
     } else {
       console.log("❗📝 There's no contract yet!");
