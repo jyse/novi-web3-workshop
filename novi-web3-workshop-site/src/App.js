@@ -14,6 +14,7 @@ function App() {
   const [completed, setCompleted] = useState(false);
   const [contract, setContract] = useState();
   const [contractAddress, setContractAddress] = useState(
+    // environment variable benoemen
     "0x945E2FF35Fc2591f310b89Ac8633fe004e2CeE93"
   );
   const [supply, setSupply] = useState(0);

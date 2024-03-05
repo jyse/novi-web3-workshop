@@ -15,7 +15,8 @@ contract NoviDevs is ERC721, ERC721Enumerable, ERC721URIStorage {
     uint256 maxSupply = 20;
 
     function _baseURI() internal pure override returns (string memory) {
-        return "ipfs://Qmcan4cdpfKn8wRL4UVSKvfjfbDKmkxon4ykbGxmuRZHDo/";
+        return "ipfs://QmeVErcrKyF8avpoKBpFpgn1BoUfRhJ9WiKzF6oYVn7Xh1/";
+        
     }
         // Step 1: Researching the safeMint()
         // Step 2: A tokenId always increments with mint
