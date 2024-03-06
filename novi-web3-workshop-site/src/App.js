@@ -6,6 +6,7 @@ import StartMinting from "./components/StartMinting";
 import InProgressMinting from "./components/InProgressMinting";
 import CompletedMinting from "./components/CompletedMinting";
 import { ethers } from "ethers";
+import abi from "./manual/abi.json";
 
 // Step 1: Let's run the app (npm run start)
 
@@ -13,7 +14,9 @@ function App() {
   const [inProgress, setInProgress] = useState(false);
   const [completed, setCompleted] = useState(false);
   const [contract, setContract] = useState();
-  const [contractAddress, setContractAddress] = useState("contractAddress");
+  const [contractAddress, setContractAddress] = useState(
+    "0x9499BE9aa57f9797FbAD1A1f13832b55712706e1"
+  );
   const [supply, setSupply] = useState(0);
   const [hash, setHash] = useState();
   const [account, setAccount] = useState(() => {
@@ -23,35 +26,46 @@ function App() {
 
   const connect = async () => {
     try {
-      // Step 2: Get Metamask account
-      // localStorage.setItem("walletAccount", JSON.stringify(walletAccount));
+      const accounts = await window.ethereum.request({
+        method: "eth_requestAccounts"
+      });
+
+      const walletAccount = accounts[0];
+      console.log("🦊 Wallet Account: ", walletAccount);
+      setAccount(walletAccount);
+
+      localStorage.setItem("walletAccount", JSON.stringify(walletAccount));
     } catch (error) {
       console.error("❌🌐🦊 Error connecting to Metamask:", error);
     }
   };
 
   const getContract = async () => {
-    // Step 4b: Connect to provider, signer.
-    // Step 4c: Get the contract with contractAddress, abi, signer.
-    // Step 4d: Set the contract;
-    // Step 5a: Get the total supply of minted NFT's
-    // Step 5b: Set the total supply
+    if (account) {
+      const provider = new ethers.providers.Web3Provider(window.ethereum);
+      const signer = provider.getSigner(account);
+      let NFTContract = new ethers.Contract(contractAddress, abi, signer);
+      setContract(NFTContract);
+      const totalSupply = await NFTContract.totalSupply();
+      setSupply(totalSupply.toNumber());
+    }
   };
 
   useEffect(() => {
     if (account) {
-      // Step 4a: Get contract
+      getContract();
     }
   }, [account]);
 
   const mint = async () => {
     if (contract) {
-      // Step 6a: Write the payload
-      // Step 6b: Use the safeMint() from the contract
-      // Step 6c: Set the transaction hash
+      const payload = { value: ethers.utils.parseEther("0.001") };
+      const transaction = await contract.safeMint(payload);
+      console.log("🐲HASH: ", transaction.hash);
+      setHash(transaction.hash);
 
       setInProgress(true);
-      // Step 5d: Await the transaction after set in Progress
+      await transaction.wait();
       setInProgress(false);
       setCompleted(true);
     } else {
@@ -82,12 +96,12 @@ function App() {
   const getState = () => {
     if (inProgress) {
       // Step 7c: Pass the hash as a prop
-      return <InProgressMinting />;
+      return <InProgressMinting hash={hash} />;
     }
 
     if (completed) {
       // Step 7d: Pass contract address as prop
-      return <CompletedMinting />;
+      return <CompletedMinting address={contractAddress} />;
     }
 
     // Step 7b: Pass the mint function as a prop
@@ -123,8 +137,9 @@ function App() {
               <div className="details-actions">
                 <p> {supply} / 20 minted </p>
                 {/* Step 3: Render a connect button conditionally with text */}
+                {account ? getState() : <ConnectWallet />}
                 {/* Step 4: Render a connect button conditionally with getState() */}
-                <ConnectWallet />
+                {/* <ConnectWallet /> */}
               </div>
             </div>
             <div className="nft">
