@@ -13,10 +13,7 @@ function App() {
   const [inProgress, setInProgress] = useState(false);
   const [completed, setCompleted] = useState(false);
   const [contract, setContract] = useState();
-  const [contractAddress, setContractAddress] = useState(
-    // environment variable benoemen
-    "0x945E2FF35Fc2591f310b89Ac8633fe004e2CeE93"
-  );
+  const [contractAddress, setContractAddress] = useState("contractAddress");
   const [supply, setSupply] = useState(0);
   const [hash, setHash] = useState();
   const [account, setAccount] = useState(() => {
@@ -54,6 +51,7 @@ function App() {
 
       setInProgress(true);
       // Step 5d: Await the transaction after set in Progress
+      setInProgress(false);
       setCompleted(true);
     } else {
       console.log("❗📝 There's no contract yet!");
