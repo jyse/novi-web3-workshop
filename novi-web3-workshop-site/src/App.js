@@ -24,7 +24,7 @@ function App() {
   const connect = async () => {
     try {
       // Step 2: Get Metamask account
-      localStorage.setItem("walletAccount", JSON.stringify(walletAccount));
+      // localStorage.setItem("walletAccount", JSON.stringify(walletAccount));
     } catch (error) {
       console.error("❌🌐🦊 Error connecting to Metamask:", error);
     }
